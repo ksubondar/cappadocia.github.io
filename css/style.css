@@ -1,0 +1,693 @@
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{width:100%; font-size:100%; line-height:1; font-size:14px; -ms-text-size-adjust:100%; -moz-text-size-adjust:100%; -webkit-text-size-adjust:100%; overflow-x: hidden; transition: 0.3s ease-in; -webkit-transition: 0.3s ease-in; -moz-transition: 0.3s ease-in; -ms-transition: 0.3s ease-in; -o-transition: 0.3s ease-in; }
+html{height:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+@font-face {
+    font-family: 'Balqis-Script'; 
+    src: url(../fonts/balqis.woff2),
+         url(../fonts/balqis.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto'; 
+    src: url(../fonts/RobotoCondensed-Regular.woff2),
+         url(../fonts/RobotoCondensed-Regular.woff);
+    font-weight: normal;
+    font-stretch: condensed;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto'; 
+    src: url(../fonts/RobotoCondensed-Light.woff2),
+         url(../fonts/RobotoCondensed-Light.woff);
+    font-weight: 300;
+    font-stretch: condensed;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto'; 
+    src: url(../fonts/RobotoCondensed-LightItalic.woff2),
+         url(../fonts/RobotoCondensed-LightItalic.woff);
+    font-weight: 300;
+    font-stretch: condensed;
+    font-style: italic;
+}
+
+body {
+    background-color: #fff;
+}
+header {
+    background: url(../img/header-bg.jpg) center / cover no-repeat;
+    height: 100vh;
+    padding-top: 72px;
+    margin-bottom: 200px;
+}
+.header-container {
+    max-width: 1036px;
+    margin: 0 auto;
+}
+.header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 152px;
+}
+.header-nav ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.header-nav ul li {
+    margin-right: 52px;
+}
+.header-nav ul li:nth-last-child(1) {
+    margin-right: 0;
+}
+.header-nav ul li:hover {
+    text-decoration: underline;
+}
+.header-nav ul li a {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-stretch: condensed;
+    color: #000000;
+}
+.header-phone {
+    position: relative;
+    padding-left: 40px;
+}
+.header-phone::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/phone-header.svg);
+    left: 0;
+}
+.header-phone a{
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-stretch: condensed;
+    color: #000000;
+}
+.header-title {
+}
+.header-title h1{
+    font-family: 'Balqis-Script';
+    font-size: 250px;
+    line-height: 334px;
+    color: #000000;
+    text-align: center;
+}
+.header-title h3 {
+    font-family: 'Roboto';
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 74px;
+    font-stretch: condensed;
+    font-style: italic;
+    color: #000000;
+    text-align: right;
+    margin-top: -66px;
+}
+section {
+    max-width: 1920px;
+    margin-bottom: 200px;
+}
+.fairy-tail-container {
+    
+}
+.fairy-tail-title {
+    padding-left: 18.75%;
+    margin-bottom: 107px;
+}
+.fairy-tail-title h3{
+    font-family: 'Balqis-Script';
+    font-size: 96px;
+    line-height: 128px;
+    color: #E2AB3F;
+}
+.fairy-tail-title h2 {
+    padding-left: 181px;
+    margin-top: -26px;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 300;
+    font-stretch: condensed;
+    font-style: italic;
+    line-height: 32px;
+    color: #000000;
+}
+.fairy-tail-body {
+    position: relative;
+}
+.fairy-tail-slider {
+    width: 50%;
+}
+.arrow-faityteil-next {
+    background-image: url(../img/arrow-next-2.svg);
+    position: absolute;
+    top: calc(50% - 70px);
+    right: 0;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+    cursor: pointer;
+}
+.arrow-faityteil-prev {
+    background-image: url(../img/arrow-back-2.svg);
+    position: absolute;
+    top: calc(50% - 70px);
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+.fairy-tail-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 50%;
+    margin-left: auto;
+    padding-left: 55px;
+    height: 100%;
+}
+.fairy-tail-text p{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    font-stretch: condensed;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.fairy-tail-text p:nth-last-child(1) {
+    margin-bottom: 0;
+}
+.fairy-tail-list ul li{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-stretch: condensed;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.list-title {
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 24px;
+    font-stretch: condensed;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.our-trip {
+    
+}
+.our-trip-container {
+    position: relative;
+}
+.our-trip-body {
+    height: 100%;
+
+}
+.our-trip-title {
+    margin-bottom: 100px;
+}
+.our-trip-title h3{
+    font-family: 'Balqis-Script';
+    font-size: 96px;
+    line-height: 120px;
+    color: #E2AB3F;
+}
+.our-trip-title h2 {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-stretch: condensed;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    margin-top: -26px;
+    padding-left: 245px;
+}
+.our-trip-programm {
+    width: 50%;
+}
+.our-trip-programm h6{
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    font-stretch: condensed;
+    margin-bottom: 20px;
+}
+.our-trip-programm ul {
+    margin-bottom: 50px;
+}
+.our-trip-programm ul li {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    font-stretch: condensed;
+    color: #000000;
+}
+.our-trip-programm a {
+    width: 280px;
+    height: 50px;
+    padding: 11px 53px 11px 54px;
+    background: #FFFFFF;
+    border: 1px solid #E2AB3F;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    font-stretch: condensed;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+}
+.our-trip-slider {
+    width: 50%;
+    margin-left: 50%;
+}
+.arrow-ourtrip-prev {
+    background-image: url(../img/arrow-back-1.svg);
+    position: absolute;
+    top: calc(50% - 70px);
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.arrow-ourtrip-next {
+    background-image: url(../img/arrow-next-1.svg);
+    position: absolute;
+    top: calc(50% - 70px);
+    right: 0;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.hotel {
+}
+.hotel-container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.hotel-title {
+    margin-bottom: 100px;
+}
+.hotel-title h2 {
+    font-family: 'Balqis-Script';
+    font-size: 96px;
+    line-height: 128px;
+    color: #E2AB3F;
+}
+.hotel-title h3 {
+    margin-top: -26px;
+    padding-left: 120px;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-stretch: condensed;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.hotel-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.hotel-body-image {
+    margin-right: 100px;
+}
+
+.hotel-body-promo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.hotel-body-promo-text {
+    margin-bottom: 80px;
+}
+.hotel-body-promo-text p {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    font-stretch: condensed;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.hotel-body-promo-text p:nth-last-child(1) {
+    margin-bottom: 0;
+}
+.hotel-body-promo-gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 39px;
+       -moz-column-gap: 39px;
+            column-gap: 39px;
+    row-gap: 50px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.hotel-body-promo-gallery a {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 39px);
+            flex: 0 0 calc(50% - 39px);
+}
+.hotel-body-promo-gallery a img {
+    width: 100%;
+    height: auto;
+}
+.price {
+    background-image: url(../img/balloon.png);
+    background-repeat: no-repeat;
+    background-position-x: 84%;
+    background-position-y: bottom;
+    margin-bottom: 200px;
+}
+.price-container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.price-title {
+    margin-bottom: 100px;
+}
+.price-title h3{
+    font-family: 'Balqis-Script';
+    font-size: 96px;
+    line-height: 128px;
+    color: #E2AB3F;
+}
+.price-title h2 {
+    margin-top: -26px;
+    padding-left: 120px;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    font-stretch: condensed;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+.price-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.price-body h4 {
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 32px;
+    font-stretch: condensed;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.price-include {
+    margin-right: 70px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 530px;
+            flex: 0 0 530px;
+}
+.price-include ul li, .price-not-include ul li {
+    font-family: 'Roboto';
+    font-stretch: condensed;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.price-include ul li:nth-last-child(1), .price-not-include ul li:nth-last-child(1) {
+    margin-bottom: 0;
+}
+.price-not-include {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 371px;
+            flex: 0 0 371px;
+}
+.booking {
+    margin-bottom: 200px;
+}
+.booking-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.booking-body {
+    margin-right: 113px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+.booking-title {
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+.booking-title h3, .booking-subtitle h3 {
+    font-family: 'Balqis-Script';
+    font-size: 96px;
+    line-height: 69px;
+    color: #E2AB3F;
+}
+.booking-title h2 {
+    padding-left: 135px;
+}
+.booking-subtitle h2 {
+    padding-left: 118px;
+}
+.booking-title h2, .booking-subtitle h2 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    font-stretch: condensed;
+    color: #000000;
+}
+.booking-subtitle {
+    margin-bottom: 100px;
+    padding-right: 30px;
+}
+.booking-form {
+    width: 383px;
+}
+.booking-form h4 {
+    font-family: 'Roboto';
+    font-size: 24px;
+    line-height: 32px;
+    font-stretch: condensed;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.booking-form form input {
+    width: 383px;
+    height: 50px;
+    padding: 0 31px;
+    background: #FFFFFF;
+    border: 1px solid #E2AB3F;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-stretch: condensed;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+.booking-form form input:nth-last-child(1) {
+    margin-bottom: 0;
+}
+.booking-form form button {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    height: 50px;
+    border: solid 1px #e2ab3f;
+    background-color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 300;
+    font-stretch: condensed;
+    line-height: normal;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+}
+.booking-img img {
+    width: 100%;
+    height: auto;
+}
+.input-name {
+
+}
+.imput-email {
+
+}
+.booking-img {
+}
+footer {
+    padding-top: 96px;
+    background: url(../img/footer-bg.jpg) top / cover no-repeat;
+    min-height: 100vh;
+}
+.footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.footer-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 71px 42.5px 203px 45px;
+    background: url(../img/kisspng-flight-hot-air-balloon-computer-icons-aero.png) top / 356px no-repeat;
+    margin-right: 139px;
+}
+.footer-contacts h2 {
+    font-family: 'Balqis-Script';
+    font-size: 86px;
+    line-height: 102px;
+    color: #E2AB3F;
+    margin-bottom: 46px;
+}
+.footer-phone {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+.footer-phone::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/phone-footer.svg);
+}
+.footer-phone a{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+.footer-mail {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+.footer-mail a {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+}
+.footer-mail::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/mail.svg);
+}
+.footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.footer-social li {
+    margin-right: 15px;
+}
+.footer-social li:nth-last-child(1) {
+    margin-right: 0;
+}
+.footer-title p{
+    font-family: 'Balqis-Script';
+    font-size: 86px;
+    line-height: 115px;
+    color: #000000;
+}
