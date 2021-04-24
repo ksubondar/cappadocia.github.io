@@ -213,7 +213,7 @@
         padding-left: calc(178px + (245 - 178) * ((100vw - 320px) / (521 - 320)));
     }
     .fairy-tail-title h2 {
-        padding-left: calc(140px + (181 - 140) * ((100vw - 320px) / (521 - 320)));
+        padding-left: calc(130px + (181 - 130) * ((100vw - 320px) / (521 - 320)));
     }
     .hotel-title h3 {
             padding-left: calc(89px + (120 - 89) * ((100vw - 320px) / (521 - 320)));
