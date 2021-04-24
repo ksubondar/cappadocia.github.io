@@ -138,7 +138,7 @@
         width: 365px;
         margin: 0 auto;
         display: block;
-        margin-bottom: calc(32px + (202 - 32) * ((100vw - 320px) / (768 - 320)));
+        margin-bottom: calc(32px + (152 - 32) * ((100vw - 320px) / (768 - 320)));
     }
     .header-nav {
         margin-bottom: 18px;
